@@ -9,7 +9,7 @@ if (!empty($_GET['function'])) {
       get_transaction();
    } 
    // INSERT DATA 
-   if($_GET['function']=='transaction/create'){
+   if($_GET['function']=='create'){
       save_transaction();
    } 
 }
