@@ -24,6 +24,27 @@
   </li>
 </ol>
 
+### Cara penggunaan php cli
+<ol>
+  <li>Masuk ke command line berdasarkan folder <b>cs-detik</b> berada</li>
+  <li>
+    Masuk ke folder public
+  
+    cd public/
+  </li>
+  <li>Ketik di command line
+  
+    php transaction-cli.php
+  </li>
+  <li>Input references id, jika refrences tidak ada maka akan memunculkan references id tidak ditemukan dan harus memasukan ulang references id</li>
+  <li>Jika references id benar, maka memasukan status dengan memilih angka dari 1 - 3 dimana setiap angka memiliki status <br>
+  1. Pending <br>
+  2. Paid <br>
+  3. Failed <br>
+  </li>
+  <li>Jika references id dan status telah dimasukan, maka data akan dirubah sesuai dengan parameter yang telah dimasukan</li>
+</ol>
+
 ### End Point - Rest API
 <table>
   <tr style="width:100%">
