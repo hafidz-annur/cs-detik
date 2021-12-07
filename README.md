@@ -2,7 +2,10 @@
 
 ### Tutorial
 <ol>
-  <li>Clone file github di folder xampp/htdocs (windows) || /opt/lampp/htdocs (Linux)</li>
+  <li>Clone file github di folder xampp/htdocs (windows) || /opt/lampp/htdocs (Linux)
+   
+    git clone https://github.com/hafidz-annur/cs-detik.git
+  </li>
   <li>Buka dan jalankan <strong>xampp</strong></li>
   <li>Jalankan apache dan mysql</li>
   <li>Buka localhost/phpmyadmin</li>
