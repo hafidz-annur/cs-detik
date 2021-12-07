@@ -5,13 +5,13 @@ require_once 'helper/validasi.php';
 
 if (!empty($_GET['function'])) {
    // GET DATA 
-   if($_GET['function']=='transaction'){
+   if ($_GET['function'] == 'transaction') {
       get_transaction();
-   } 
+   }
    // INSERT DATA 
-   if($_GET['function']=='create'){
+   else if ($_GET['function'] == 'create') {
       save_transaction();
-   } 
+   }
 }
 
 function get_last_transaction()
@@ -137,7 +137,7 @@ function save_transaction()
    echo json_encode($response);
 }
 
-function update_transaction($ref_id, $status) 
+function update_transaction($ref_id, $status)
 {
    global $connect;
    $updated = date('Y-m-d H:i:s');
@@ -146,19 +146,19 @@ function update_transaction($ref_id, $status)
                updated = '$updated'
                WHERE references_id='$ref_id'");
 
-   if($result){
+   if ($result) {
       return 1;
    } else {
       return $connect->error;
    }
 }
 
-function get_transaction_by_id($id) 
+function get_transaction_by_id($id)
 {
    global $connect;
    $query = $connect->query("SELECT * FROM user_transaction WHERE references_id=$id");
 
-   if($query){
+   if ($query) {
       return 1;
    } else {
       return 0;
