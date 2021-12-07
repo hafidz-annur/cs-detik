@@ -88,7 +88,7 @@
   <tr style="width:100%">
     <td>5</td>
     <td>Menambahkan data transaksi baru</td>
-    <td>http://127.0.0.1/cs-detik/public/api.php?function=transaction/create</td>
+    <td>http://127.0.0.1/cs-detik/public/api.php?function=create</td>
     <td>POST</td>
     <td>
     <ul>
